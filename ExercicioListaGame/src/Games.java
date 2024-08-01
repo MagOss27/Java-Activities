@@ -2,12 +2,14 @@ public class Games {
 
     private String titulo;
     private String descricao;
+    private String marcaGame;
     private int numeroGame;
 
     // Construtor
-    public Games(String titulo, String descricao, int numeroGame) {
+    public Games(String titulo, String descricao, String marcaGame, int numeroGame) {
         this.titulo = titulo;
         this.descricao = descricao;
+        this.marcaGame = marcaGame;
         this.numeroGame = numeroGame;
     }
 
@@ -19,6 +21,10 @@ public class Games {
     // Getter para descrição
     public String getDescricao() {
         return descricao;
+    }
+
+    public String getMarcaGame(){
+        return marcaGame;
     }
 
     // Getter para número do jogo
@@ -34,6 +40,11 @@ public class Games {
     // Setter para descrição
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    // Setter para marcaGame
+    public void setMarcaGame(String marcaGame){
+        this.marcaGame = marcaGame;
     }
 
     // Setter para número do jogo
