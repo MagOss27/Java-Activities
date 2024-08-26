@@ -29,48 +29,48 @@ public class Main {
         System.out.println("6. Calcular o fatorial de um número");
         int escolha = scanner.nextInt();
 
-        double numero1, numero2;
+        float numero1, numero2;
         int numeroInteiro;
 
         switch (escolha) {
             case 1:
                 System.out.println("Digite o primeiro número: ");
-                numero1 = scanner.nextDouble();
+                numero1 = scanner.nextFloat();
                 System.out.println("Digite o segundo número: ");
-                numero2 = scanner.nextDouble();
+                numero2 = scanner.nextFloat();
                 System.out.println("Resultado da Adição: " + calculadora.adicionar(numero1, numero2));
                 break;
 
             case 2:
                 System.out.println("Digite o primeiro número: ");
-                numero1 = scanner.nextDouble();
+                numero1 = scanner.nextFloat();
                 System.out.println("Digite o segundo número: ");
-                numero2 = scanner.nextDouble();
-                System.out.println("Resultado da Subtração: " + calculadora.subtarir(numero1, numero2));
+                numero2 = scanner.nextFloat();
+                System.out.println("Resultado da Subtração: " + calculadora.subtrair(numero1, numero2));
                 break;
 
             case 3:
                 System.out.println("Digite o primeiro número: ");
-                numero1 = scanner.nextDouble();
+                numero1 = scanner.nextFloat();
                 System.out.println("Digite o segundo número: ");
-                numero2 = scanner.nextDouble();
+                numero2 = scanner.nextFloat();
                 System.out.println("Resultado da Multiplicação: " + calculadora.multiplicar(numero1, numero2));
                 break;
 
             case 4:
                 System.out.println("Digite o primeiro número: ");
-                numero1 = scanner.nextDouble();
+                numero1 = scanner.nextFloat();
                 System.out.println("Digite o segundo número: ");
-                numero2 = scanner.nextDouble();
+                numero2 = scanner.nextFloat();
                 System.out.println("Resultado da Divisão: " + calculadora.dividir(numero1, numero2));
                 break;
 
             case 5:
                 System.out.println("Digite o primeiro número: ");
-                numero1 = scanner.nextDouble();
+                numero1 = scanner.nextFloat();
                 System.out.println("Digite o segundo número: ");
-                numero2 = scanner.nextDouble();
-                System.out.println("Resultado do Resto da Divisão: " + calculadora.restodaDivisao(numero1, numero2));
+                numero2 = scanner.nextFloat();
+                System.out.println("Resultado do Resto da Divisão: " + calculadora.restoDaDivisao(numero1, numero2));
                 break;
 
             case 6:
