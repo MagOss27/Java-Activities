@@ -20,7 +20,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Calculadora calculadora = new Calculadora();
 
-        int escolha;
+        int escolhaNumero;
 
         // laço de repetição - Inicio\\
         do {
@@ -32,9 +32,9 @@ public class Main {
             System.out.println("5. Calcular resto de uma divisão");
             System.out.println("6. Calcular o fatorial de um número");
             System.out.println("7. Sair");
-            escolha = scanner.nextInt();
+            escolhaNumero = scanner.nextInt();
 
-            if (escolha == 7) {
+            if (escolhaNumero == 7) {
                 System.out.println("Saindo...");
                 break;
             }
@@ -42,7 +42,7 @@ public class Main {
             float numero1, numero2;
             int numeroInteiro;
 
-            switch (escolha) {
+            switch (escolhaNumero) {
                 case 1:
                     System.out.println("Digite o primeiro número: ");
                     numero1 = scanner.nextFloat();
@@ -95,7 +95,7 @@ public class Main {
                     break;
             }
 
-        } while (escolha != 7);
+        } while (escolhaNumero != 7);
         // laço de repetição - Final\\
 
         scanner.close();
