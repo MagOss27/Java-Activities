@@ -48,7 +48,7 @@ public class Main {
                     numero1 = scanner.nextFloat();
                     System.out.println("Digite o segundo número: ");
                     numero2 = scanner.nextFloat();
-                    System.out.println("Resultado da Adição: " + calculadora.adicionar(numero1, numero2));
+                    System.out.println("Resultado da Adição: " + calculadora.adicionarNumero(numero1, numero2));
                     break;
 
                 case 2:
@@ -56,7 +56,7 @@ public class Main {
                     numero1 = scanner.nextFloat();
                     System.out.println("Digite o segundo número: ");
                     numero2 = scanner.nextFloat();
-                    System.out.println("Resultado da Subtração: " + calculadora.subtrair(numero1, numero2));
+                    System.out.println("Resultado da Subtração: " + calculadora.subtrairNumero(numero1, numero2));
                     break;
 
                 case 3:
@@ -64,7 +64,7 @@ public class Main {
                     numero1 = scanner.nextFloat();
                     System.out.println("Digite o segundo número: ");
                     numero2 = scanner.nextFloat();
-                    System.out.println("Resultado da Multiplicação: " + calculadora.multiplicar(numero1, numero2));
+                    System.out.println("Resultado da Multiplicação: " + calculadora.multiplicarNumero(numero1, numero2));
                     break;
 
                 case 4:
@@ -72,7 +72,7 @@ public class Main {
                     numero1 = scanner.nextFloat();
                     System.out.println("Digite o segundo número: ");
                     numero2 = scanner.nextFloat();
-                    System.out.println("Resultado da Divisão: " + calculadora.dividir(numero1, numero2));
+                    System.out.println("Resultado da Divisão: " + calculadora.dividirNumero(numero1, numero2));
                     break;
 
                 case 5:

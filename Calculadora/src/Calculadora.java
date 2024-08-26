@@ -1,21 +1,21 @@
 class Calculadora {
     // Adicionar dois números
-    public float adicionar(float a, float b) {
+    public float adicionarNumero(float a, float b) {
         return a + b;
     }
 
     // Subtrair dois números
-    public float subtrair(float a, float b) {
+    public float subtrairNumero(float a, float b) {
         return a - b;
     }
 
     // Multiplicar dois números
-    public float multiplicar(float a, float b) {
+    public float multiplicarNumero(float a, float b) {
         return a * b;
     }
 
     // Dividir dois números
-    public float dividir(float a, float b) {
+    public float dividirNumero(float a, float b) {
         if (b != 0) {
             return a / b;
         } else {
