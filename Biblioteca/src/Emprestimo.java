@@ -2,11 +2,13 @@ import java.time.LocalDate;
 
 public class Emprestimo {
 
-    private Livro livro;
-    private Membro membro;
-    private LocalDate dataEmprestimo;
-    private LocalDate dataDevolucao;
+    // Atributos da classe Emprestimo
+    private Livro livro; // Livro que está sendo emprestado
+    private Membro membro; // Membro que está emprestando o livro
+    private LocalDate dataEmprestimo; // Data em que o empréstimo foi realizado
+    private LocalDate dataDevolucao; // Data em que o livro deve ser devolvido
 
+    // Construtor da classe Emprestimo, inicializa os atributos com os valores fornecidos
     public Emprestimo(Livro livro, Membro membro, LocalDate dataEmprestimo, LocalDate dataDevolucao) {
         this.livro = livro;
         this.membro = membro;
@@ -14,21 +16,24 @@ public class Emprestimo {
         this.dataDevolucao = dataDevolucao;
     }
 
+    // Método para registrar um empréstimo
     public void registrarEmprestimo() {
-        if (livro.getDisponibilidade()) {
-            livro.setDisponibilidade(false);
+        if (livro.getDisponibilidade()) { // Verifica se o livro está disponível
+            livro.setDisponibilidade(false); // Define o livro como indisponível
             System.out.println("Empréstimo registrado para " + membro.getNome() + " com o livro " + livro.getTitulo() + " em " + dataEmprestimo);
         } else {
             System.out.println("O livro " + livro.getTitulo() + " não está disponível para empréstimo.");
         }
     }
 
+    // Método para registrar a devolução de um livro
     public void registrarDevolucao() {
-        livro.setDisponibilidade(true);
+        livro.setDisponibilidade(true); // Define o livro como disponível novamente
         System.out.println("Devolução registrada para " + membro.getNome() + " com o livro " + livro.getTitulo() + " em " + dataDevolucao);
     }
 
-    // Getters e Setters
+    // Getters e Setters para acessar e modificar os atributos
+
     public Livro getLivro() {
         return livro;
     }
