@@ -1,1 +1,1 @@
-# Java_Activities
+# Java-Activities
